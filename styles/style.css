@@ -83,7 +83,7 @@ main{
 #page-1{
     width: 100%;
 
-    min-height: 80vh;
+    min-height: 50vh;
     
     /* background-color: aquamarine; */
 
@@ -155,7 +155,7 @@ main{
 
 #page-2{
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     background-image: url(/assets/bg.png);
     background-position: center;
     background-size: contain;
@@ -241,7 +241,7 @@ main{
     color: #8700FF;
 }
 
-
+/* Work on BTN */
 
 .arrow-btns{
     display: flex;
@@ -259,6 +259,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .arrow-btns .right-arrow{
     height: 50px;
@@ -268,6 +269,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 
@@ -335,6 +337,30 @@ main{
     .hero-description{
         font-size: 1rem;
     }
+
+    .arrow-btns{
+        display: none;
+    }
+
+    .curriculum-cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .Curriculum{
+        width: 93%;
+    }
+
+    .curriculum-card{
+        max-width: 345px;
+    }
+    .curriculum-cards{
+        gap: 16px;
+    }
+
+    .curriculum-title{
+        font-size: 2rem;
+    }
 }
 
 
@@ -365,6 +391,16 @@ main{
     .hero-description{
         font-size: 0.85rem;
     }
+
+    .Curriculum{
+        width: 93%;
+    }
+
+    .arrow-btns{
+        display: none;
+    }
+
+
 }
 
 
@@ -374,5 +410,27 @@ main{
 @media screen and (max-width: 710px){
     nav ul li:nth-child(4){
         display: none;
+    }
+}
+@media screen and (min-width:576px) and (max-width: 800px){
+    .curriculum-card{
+        padding: 27px 12px;
+        gap: 10px;
+    }
+
+    .crclm-card-img {
+        width: 90px;
+    }
+
+    .card-crclm-description{
+        line-height: 20px;
+    }
+
+    .crclm-card-btn button{
+        bottom: 15px;
+    }
+
+    .crclm-card-title {
+        font-size: 1.1rem;
     }
 }
