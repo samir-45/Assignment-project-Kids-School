@@ -35,7 +35,7 @@ nav ul li:nth-child(1) a{
     color: orange;
 }
 nav ul li:nth-child(2) a{
-    color: skyblue;
+    color: #01ACFD;
 }
 nav ul li:nth-child(3) a{
     color: #05D4DF;
@@ -62,14 +62,103 @@ nav{
     background-color: orange;
     padding: 10px 49px;
     border: none;
-    border-radius: 5px;
+    border-radius: 9px;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.05rem;
 }
 
 .hamburger-icon{
     display: none;
+}
+
+main{
+    width: 100%;
+}
+
+/* Working on page - 1 */
+
+
+
+#page-1{
+    width: 100%;
+
+    min-height: 80vh;
+    
+    /* background-color: aquamarine; */
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.hero-title span:nth-child(1){
+   color: orange;
+}
+/* .hero-title span:nth-child(2){
+   color: #01ACFD;
+} */
+
+#hero-title-2nd-span{
+    color: #01ACFD;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+/* .hero-img{
+    text-align: right;
+} */
+
+
+.hero-title{
+    font-size: 3rem;
+}
+
+
+.hero-info{
+    width: 55%;
+
+}
+
+.hero-img{
+    width: 38%;
+}
+
+.hero-description{
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin: 20px 0;
+}
+
+.hero-btn button{
+    background-color: black;
+    padding: 10px 49px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+
+
+
+
+/* Working on page - 2 */
+
+#page-2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/bg.png);
+    background-position: center;
+    background-size: contain;
 }
 
 
@@ -107,6 +196,30 @@ nav{
         height: 66px;
         width: 93%;
     }
+
+    .hero{
+        flex-direction: column-reverse;
+        width: 93%;
+    }
+    .hero-info{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .hero-img{
+        width: 95%;
+    }
+
+    .hero-btn button{
+        padding: 12px 25px;
+    }
+    .hero-title{
+        font-size: 2rem;
+    }
+
+    .hero-description{
+        font-size: 1rem;
+    }
 }
 
 
@@ -119,6 +232,22 @@ nav{
 @media screen and (min-width:576px) and (max-width:992px) {
     nav{
         /* background-color: #5D58EF; */
-        width: 90%;
+        width: 93%;
+    }
+
+    .hero{
+        width: 93%;
+    }
+
+    .hero-info{
+        width: 60%;
+    }
+
+    .hero-title{
+        font-size: 2rem;
+    }
+
+    .hero-description{
+        font-size: 0.85rem;
     }
 }
