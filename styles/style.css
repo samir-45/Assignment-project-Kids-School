@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Quicksand", serif;
+}
+
+/* Designing Navbar */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+nav ul li:nth-child(1) a{
+    color: orange;
+}
+nav ul li:nth-child(2) a{
+    color: skyblue;
+}
+nav ul li:nth-child(3) a{
+    color: #05D4DF;
+}
+nav ul li:nth-child(4) a{
+    color: #5D58EF;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    height: 57px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.nav-btn button{
+    background-color: orange;
+    padding: 10px 49px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+
+
+
+
+
+/* Responsiveness with media quirees */
+
+/* For mobile devices */
+
+@media screen and (max-width: 576px) {
+    .hamburger-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul{
+        display: none;
+    
+    }
+
+    .nav-btn{
+        display: none;
+    }
+    .logo h2{
+        display: none;
+    }
+    header{
+        border-bottom: 1px solid orange;
+
+    }
+
+    nav{
+        height: 66px;
+        width: 93%;
+    }
+}
+
+
+
+
+
+
+/* For tab and medium devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        /* background-color: #5D58EF; */
+        width: 90%;
+    }
+}
