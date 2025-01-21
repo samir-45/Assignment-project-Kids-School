@@ -161,6 +161,121 @@ main{
     background-size: contain;
 }
 
+.Curriculum{
+    width: 85%;
+    margin: 0 auto;
+    /* margin-top: 30px; */
+
+}
+
+.curriculum-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+}
+
+.curriculum-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+
+.curriculum-card{
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding: 45px 20px;
+    height: 100%;
+    max-width: 326px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(5,212,223,0.2050945378151261) 4%, rgba(255,255,255,1) 37%);
+    border: 1px solid #DEF5FF;
+    position: relative;
+}
+
+.curriculum-card:nth-child(2){
+    background: linear-gradient(180deg, rgba(240, 168, 0, 0.244) 4%, rgba(255,255,255,1) 37%);
+    border: 1px solid #FFF4DC;
+}
+.curriculum-card:nth-child(3){
+    background: linear-gradient(180deg, rgba(136, 0, 255, 0.247) 4%, rgba(255,255,255,1) 37%);
+    border: 1px solid #F2E8FF;
+}
+
+.crclm-card-title{
+    font-size: 1.3rem;
+}
+.card-crclm-description{
+    font-size: 0.85rem;
+    color: #808080;
+    line-height: 22px;
+    font-weight: 500;
+}
+.crclm-card-img{
+    width: 120px;
+}
+
+.crclm-card-btn button{
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 37px;
+    cursor: pointer;
+}
+
+
+.curriculum-card:nth-child(1) button{
+    color: #64C8FF;
+}
+.curriculum-card:nth-child(2) button{
+    color: orange;
+}
+.curriculum-card:nth-child(3) button{
+    color: #8700FF;
+}
+
+
+
+.arrow-btns{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 45px;
+}
+
+.arrow-btns .left-arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-btns .right-arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
 
 
 
@@ -249,5 +364,15 @@ main{
 
     .hero-description{
         font-size: 0.85rem;
+    }
+}
+
+
+
+/* Submedium devices */
+
+@media screen and (max-width: 710px){
+    nav ul li:nth-child(4){
+        display: none;
     }
 }
