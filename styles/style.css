@@ -289,6 +289,13 @@ main{
     background-size: contain;
 }
 
+.floating-text{
+
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 85%;
+}
+
 .stories{
     width: 85%;
     margin: 0 auto;
@@ -668,6 +675,11 @@ footer{
                 .lower{
                     width: 93%;
                 }
+
+                .floating-text{
+
+                    width: 93%;
+                }
 }
 
 
@@ -796,4 +808,16 @@ footer{
 
 
 
+}
+
+
+@media screen and (max-width: 393px){
+    .stories-right-card .stories-card:nth-child(3) .stories-card-btn button{
+        font-size: 0.75rem;
+        top: 45%;
+    }
+    .stories-right-card .stories-card:nth-child(2) .stories-card-btn button{
+        font-size: 0.75rem;
+        top: 45%;
+    }
 }
