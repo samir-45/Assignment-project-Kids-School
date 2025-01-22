@@ -666,10 +666,12 @@ footer{
                     top: 57%;
                     padding: 9px 12px;
                     font-size: 0.75rem;
+                    margin-left: 15px;
                 }
 
                 .stories-right-card .stories-card .stories-card-btn button{
                     font-size: 0.75rem;
+                    margin-left: 15px;
                 }
 
                 .lower{
@@ -820,4 +822,14 @@ footer{
         font-size: 0.75rem;
         top: 45%;
     }
+
+    .stories-left-card .stories-card .stories-card-title{
+
+        margin-top: 25px;
+
+        }
+
+        .stories-left-card .stories-card .stories-card-btn button{
+            top: 47%;
+        }
 }
