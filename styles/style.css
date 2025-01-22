@@ -13,6 +13,7 @@ font-family: "Quicksand", serif;
     display: flex;
     align-items: center;
     gap: 11px;
+    cursor: pointer;
 }
 
 nav ul{
@@ -311,14 +312,10 @@ grid-template-columns: repeat(2, 1fr);
 
 /* Styling for left big card */
 
-
-
-.stories-right-card{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    place-items: top center;
+.stories-card-to-be-visible{
+    display: none;
 }
+
 
 .stories-left-card{
     place-items: center;
@@ -373,6 +370,15 @@ border-top-left-radius: 16px;
 
 /* Styling for right 4 card */
 
+
+
+.stories-right-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: top center;
+}
+
 .stories-right-card .stories-card{
     position: relative;
     border-radius: 15px;
@@ -425,9 +431,78 @@ border-top-left-radius: 16px;
 }
 
 
+.stories-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px 0;
+    font-weight: 700;
+}
 
 
+.stories-card-to-be-hidden .stories-card{
+    height: 100%;
+}
 
+
+/* Working on footer */
+
+footer{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #01ACFD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lower{
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+
+.col1 .lower-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.col1 .lower-logo .logo-name{
+    font-size: 2.2rem;
+}
+
+.col2 ul li{
+    list-style: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.col3 .col3-icons{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.col3 .col3-icons .col3-icon{
+
+    cursor: pointer;
+}
+
+.col2-title, .col3-title{
+    font-size: 1.3rem;
+}
 
 
 
@@ -520,7 +595,92 @@ border-top-left-radius: 16px;
     .curriculum-title{
         font-size: 2rem;
     }
+
+    .stories-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        /* gap: 5px; */
+        
+        }
+
+
+
+        .stories-left-card .stories-card{
+            background-color: white;
+            height: auto;
+            width: auto;
+            gap: 0;
+        }
+
+        .stories-card-to-be-visible{
+            display: block;
+        }
+
+        .stories-card-to-be-hidden{
+            display: none;
+        }
+
+        .stories-left-card{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .stories-left-card .stories-card .stories-card-description{
+            display: none;
+        }
+
+
+
+            .stories-right-card{
+                gap: 15px;
+            }
+
+
+            .stories{
+                width: 93%;
+            }
+
+            .stories-left-card .stories-card .stories-card-title{
+                font-size: 0.85rem;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                }
+                .stories-right-card .stories-card .stories-card-title{
+                    font-size: 0.85rem;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    margin-left: 20px;
+                }
+
+                .stories-left-card .stories-card .stories-card-btn button{
+                    top: 57%;
+                    padding: 9px 12px;
+                    font-size: 0.75rem;
+                }
+
+                .stories-right-card .stories-card .stories-card-btn button{
+                    font-size: 0.75rem;
+                }
+
+                .lower{
+                    width: 93%;
+                }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -570,6 +730,15 @@ border-top-left-radius: 16px;
     nav ul li:nth-child(4){
         display: none;
     }
+    .lower{
+        flex-direction: column;
+        gap: 40px;
+        margin: 50px 0;
+    }
+
+    .col1{
+        width: 100%;
+    }
 }
 @media screen and (min-width:576px) and (max-width: 800px){
     .curriculum-card{
@@ -592,4 +761,39 @@ border-top-left-radius: 16px;
     .crclm-card-title {
         font-size: 1.1rem;
     }
+
+
+
+}
+
+/* for little device */
+
+@media screen and (max-width: 432px){
+    .stories-left-card .stories-card .stories-card-title{
+        font-size: 0.85rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        }
+        .stories-right-card .stories-card .stories-card-title{
+            font-size: 0.85rem;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+
+        .stories-left-card .stories-card .stories-card-btn button{
+            top: 53%;
+            padding: 9px 12px;
+            font-size: 0.75rem;
+            margin-left: 12px;
+        }
+
+        .stories-right-card .stories-card .stories-card-btn button{
+            font-size: 0.75rem;
+        }
+
+
+
+
 }
